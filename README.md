@@ -32,8 +32,7 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 
 # Solution 
 **Q1: What is the total amount each customer spent at the restaurant?**
-<details>
-  <p>
+
 ````sql
 SELECT s.customer_id, SUM(price) AS total_amount_spent FROM sales s
 JOIN menu ON s.product_id = m.product_id
@@ -48,8 +47,6 @@ ORDER BY customer_id
 Answer: 
 <br>
 ![q1answer](https://user-images.githubusercontent.com/122754787/216840816-1676169f-e90f-4528-abbd-03c240d7242d.png)
-  </p>
-</details>
 
 ***
 
