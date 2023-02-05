@@ -13,11 +13,9 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns, how much money they’ve spent and also which menu items are their favourite. Having this deeper connection with his customers will help him deliver a better and more personalised experience for his loyal customers.
 
 
-
 ## Entity Relationship Diagram
 
 ![entitydg2](https://user-images.githubusercontent.com/122754787/216842806-1545ba7f-8155-4efa-b514-fca62c533464.png)
-
 
 
 ## Case Study Questions
