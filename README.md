@@ -30,7 +30,7 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 - 10.In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
 
-# Solution
-- Q1. 
+# Solution 
 ![q1dannydiner](https://user-images.githubusercontent.com/122754787/216840236-b70ceea7-9c1a-4ef9-b9c8-05ca235bfeb6.png)
+Q1.
 
