@@ -19,6 +19,8 @@ Danny wants to use the data to answer a few simple questions about his customers
 ![entitydg2](https://user-images.githubusercontent.com/122754787/216842806-1545ba7f-8155-4efa-b514-fca62c533464.png)
 
 ## Schema
+<details>
+	
 ````sql
 CREATE SCHEMA dannys_diner;
 SET search_path = dannys_diner;
@@ -74,6 +76,7 @@ VALUES
   ('A', '2021-01-07'),
   ('B', '2021-01-09');
 ````
+</details>
 
 ## Case Study Questions
   
