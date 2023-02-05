@@ -39,7 +39,7 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 
 
 # Solution 
-**Q1: What is the total amount each customer spent at the restaurant?**
+### Q1: What is the total amount each customer spent at the restaurant?
 <details>
 
 ````sql
@@ -60,7 +60,7 @@ Answer:
 
 ***
 
-**Q2: How many days has each customer visited the restaurant?**
+### Q2: How many days has each customer visited the restaurant?
 <details>
 
 ````sql
