@@ -111,7 +111,7 @@ GROUP BY product_name, s.product_id
 ORDER BY most_purchased DESC
 ````
 
-- Use COUNT of product_id that aggregates the different product_id separately 
+- Use COUNT of product_id 
 - GROUP BY the product_id and product_name to show all the products and the amount of times they were each purchased
 - ORDER BY most_purchased DESC to get the highest to lowest
 
