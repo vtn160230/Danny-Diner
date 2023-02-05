@@ -31,4 +31,4 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 
 
 # Solution
-[Question 1] (https://user-images.githubusercontent.com/122754787/216840236-b70ceea7-9c1a-4ef9-b9c8-05ca235bfeb6.png)
+![q1dannydiner](https://user-images.githubusercontent.com/122754787/216840236-b70ceea7-9c1a-4ef9-b9c8-05ca235bfeb6.png)
