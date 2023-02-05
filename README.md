@@ -42,7 +42,11 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 
 Answer: 
 <br>
-![q1answer](https://user-images.githubusercontent.com/122754787/216840816-1676169f-e90f-4528-abbd-03c240d7242d.png)
+````SELECT s.customer_id, SUM(price) AS total_amount_spent FROM sales s
+JOIN menu ON s.product_id = m.product_id
+GROUP BY customer_id
+ORDER BY customer_id
+````
 <br>
 
 ***
