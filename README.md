@@ -114,4 +114,9 @@ ORDER BY most_purchased DESC
 - Use COUNT of product_id to gather similar entries of the orders together
 - GROUP BY the product_id and product_name to show all the products and the amount of times they were each purchased
 - ORDER BY most_purchased DESC to get the highest to lowest
+
+Answer:
+<br>
+![q4asnwer](https://user-images.githubusercontent.com/122754787/216847985-9d0cecf3-dd8f-4075-a61e-67e3c38c5db3.png)
+ntent.com/122754787/216845143-43f7855d-4c28-4edf-9520-2316d43317c5.png)
 </details>
