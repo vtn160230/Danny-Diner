@@ -8,18 +8,18 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 - [Solution] (#Solution)
 
 
-# Business Task
+## Business Task
 
 
 
 
-# Entity Relationship Diagram
+## Entity Relationship Diagram
 
 ![entitydg](https://user-images.githubusercontent.com/122754787/216842489-7b493ebb-fee6-44b4-b8a5-58351b7a871f.png)
 
 
 
-# Case Study Questions
+## Case Study Questions
   
 - What is the total amount each customer spent at the restaurant?
 - How many days has each customer visited the restaurant?
@@ -33,7 +33,7 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 - In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
 
-# Solution 
+## Solution 
 ### Q1: What is the total amount each customer spent at the restaurant?
 <details>
 
