@@ -5,7 +5,7 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 - [Business Task](#Business-Task)
 - [Entity Relationship Diagram](#Entity-Relationship-Diagram)
 - [Case Study Questions](#Case-Study-Questions)
-- [Solution](#Solution)
+- [Solutions](#Solutions)
 
 
 ## Business Task
@@ -32,7 +32,7 @@ Danny wants to use the data to answer a few simple questions about his customers
 - In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
 
-## Solution 
+## Solutions 
 ### Q1: What is the total amount each customer spent at the restaurant?
 <details>
 
