@@ -74,3 +74,25 @@ Answer:
 </details>
 
 ***
+
+### Q3: What was the first item from the menu purchased by each customer?
+<details>
+
+````sql
+  with t1 as(
+	SELECT customer_id, order_date, product_name, 
+	ROW_Number() OVER(PARTITION BY s.customer_id
+	ORDER BY s.order_date) as rank
+	FROM sales s
+	JOIN menu m ON s.product_id = m.product_id
+)
+
+SELECT customer_id, product_name FROM t1
+WHERE rank = 1
+GROUP BY customer_id, product_name
+````
+  
+- Use t1 as a temporary table and use ROW_Number to create column ranks that is partitioned by the customer_id and ORDERED BY order_date
+- Write new query pulling the customer_id and product_name from t1 table WHERE the rank = 1, which will pull the rank 1 entry for each customer_id
+  GROUP BY customer_id and product_name to fetch the customer_id and first item ever ordered by the customer
+  </details>
