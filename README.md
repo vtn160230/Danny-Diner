@@ -100,3 +100,18 @@ Answer:
   </details>
 
 ***
+
+### Q4: What is the most purchased item on the menu and how many times was it purchased by all customers?
+<details>
+
+````sql
+SELECT product_name, COUNT(s.product_id) AS most_purchased FROM sales s
+JOIN menu m ON s.product_id = m.product_id
+GROUP BY product_name, s.product_id
+ORDER BY most_purchased DESC
+````
+
+- Use COUNT of product_id to gather similar entries of the orders together
+- GROUP BY the product_id and product_name to show all the products and the amount of times they were each purchased
+- ORDER BY most_purchased DESC to get the highest to lowest
+</details>
