@@ -53,3 +53,9 @@ Q2: How many days has each customer visited the restaurant?
 
 - I used COUNT on the order_date to get each entry for the order_date, and DISTINCT to remove the duplicates of the same date to find each single by
 - Finished with GROUP BY to get the customers in ascending order
+
+Answer: 
+<br>
+![q2answer](https://user-images.githubusercontent.com/122754787/216841374-7dcbccce-3a06-4093-a864-df90981651c3.png)
+
+***
