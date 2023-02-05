@@ -33,7 +33,7 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
 # Solution 
 **Q1: What is the total amount each customer spent at the restaurant?**
 <details>
-<p>
+  <p>
 ````sql
 SELECT s.customer_id, SUM(price) AS total_amount_spent FROM sales s
 JOIN menu ON s.product_id = m.product_id
