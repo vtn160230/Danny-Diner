@@ -20,6 +20,9 @@ Danny wants to use the data to answer a few simple questions about his customers
 
 ## Schema
 <details>
+	<summary>
+		Click to Expand the Schema
+	</summary>
 	
 ````sql
 CREATE SCHEMA dannys_diner;
