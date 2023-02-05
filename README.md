@@ -22,6 +22,7 @@ Week 1 of the 8 Week SQL Challenge - Danny's Diner
   <summary>
     Click to Expand
   </summary>
+  
 - What is the total amount each customer spent at the restaurant?
 - How many days has each customer visited the restaurant?
 - What was the first item from the menu purchased by each customer?
