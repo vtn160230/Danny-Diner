@@ -59,7 +59,8 @@ Answer:
 ***
 
 **Q2: How many days has each customer visited the restaurant?**
-<br>
+<details>
+
 ````sql
 SELECT customer_id, COUNT(DISTINCT(order_date)) as days_visited FROM sales s
 GROUP BY customer_id
@@ -72,5 +73,6 @@ GROUP BY customer_id
 Answer: 
 <br>
 ![q2answer](https://user-images.githubusercontent.com/122754787/216841374-7dcbccce-3a06-4093-a864-df90981651c3.png)
+</details>
 
 ***
