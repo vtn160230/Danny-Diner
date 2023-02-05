@@ -21,7 +21,7 @@ Danny wants to use the data to answer a few simple questions about his customers
 ## Schema
 <details>
 	<summary>
-		Click to Expand the Schema
+		Click to expand the Schema
 	</summary>
 	
 ````sql
