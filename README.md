@@ -45,3 +45,6 @@ Answer:
 ![q1answer](https://user-images.githubusercontent.com/122754787/216840816-1676169f-e90f-4528-abbd-03c240d7242d.png)
 
 ***
+
+Q2: How many days has each customer visited the restaurant?
+<br>
