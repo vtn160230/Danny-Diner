@@ -94,5 +94,11 @@ GROUP BY customer_id, product_name
   
 - Use t1 as a temporary table and use ROW_Number to create column ranks that is partitioned by the customer_id and ORDERED BY order_date
 - Write new query pulling the customer_id and product_name from t1 table WHERE the rank = 1, which will pull the rank 1 entry for each customer_id
-  GROUP BY customer_id and product_name to fetch the customer_id and first item ever ordered by the customer
+- GROUP BY customer_id and product_name to fetch the customer_id and first item ever ordered by the customer
+	
+Answer: 
+<br>
+![q3answer](https://user-images.githubusercontent.com/122754787/216845143-43f7855d-4c28-4edf-9520-2316d43317c5.png)
   </details>
+
+***
