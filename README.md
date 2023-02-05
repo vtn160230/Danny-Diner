@@ -40,3 +40,7 @@ Q1. What is the total amount each customer spent at the restaurant?
 - Used a JOIN to combine the sales and menu table on product_id that are from both tables
 - Ended with an ORDER BY on customer_id to get an ascending table
 
+Answer: 
+<br>
+![q1answer](https://user-images.githubusercontent.com/122754787/216840816-1676169f-e90f-4528-abbd-03c240d7242d.png)
+
