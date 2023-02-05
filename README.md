@@ -119,3 +119,30 @@ Answer:
 <br>
 ![q4asnwer](https://user-images.githubusercontent.com/122754787/216847985-9d0cecf3-dd8f-4075-a61e-67e3c38c5db3.png)
 </details>
+
+***
+
+### Q5: Which item was the most popular for each customer?
+<details>
+
+````sql
+	with t1 as (
+	SELECT customer_id, product_name, COUNT(m.product_id) AS order_count,
+	DENSE_RANK() OVER(PARTITION BY s.customer_id 
+					ORDER BY COUNT(s.customer_id) DESC) AS rank 
+	FROM sales s
+	JOIN menu m ON s.product_id = m.product_id
+	GROUP BY customer_id, product_name
+	ORDER BY customer_id, rank DESC
+)
+
+SELECT customer_id, product_name, order_count FROM t1
+WHERE rank = 1
+````
+- Use t1 as a temp table and use DENSE_RANK so the tied numbers are not skipped over
+- Fetch data WHERE the rank = 1 to show the most popular item for each customer
+
+Answer:
+<br>
+![q5answer](https://user-images.githubusercontent.com/122754787/216849655-b547c715-ca65-4186-b32b-9e4b7e4bbea1.png)
+</details>
