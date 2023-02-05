@@ -2,10 +2,10 @@
 Week 1 of the 8 Week SQL Challenge - Danny's Diner
 
 ##  Table of Contents
-- [Business Task] (# Business Task)
-- [Entity Relationship Diagram] (# Entity Relatioship Diagram)
-- [Case Study Questions] (# Case Study Questions)
-- [Solution] (# Solution)
+- [Business Task] (#Business-Task)
+- [Entity Relationship Diagram] (#Entity-Relatioship-Diagram)
+- [Case Study Questions] (#Case-Study-Questions)
+- [Solution] (#Solution)
 
 
 # Business Task
