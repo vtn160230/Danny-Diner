@@ -213,7 +213,7 @@ Answer:
 ***
 
 ### Q6: Which item was purchased first by the customer after they became a member?
-
+<details>
 ````sql
 with t1 as (
 	SELECT s.customer_id, m.join_date, s.order_date, s.product_id,
@@ -228,6 +228,13 @@ SELECT s.customer_id, s.order_date, m.product_name
 FROM t1 s
 JOIN menu m
 ON s.product_id = m.product_id
-WHERE rank = 1;
+WHERE rank = 1
+ORDER BY customer_id
 ````
-- Use a temp table t1, 
+- Use a temp table t1
+- Use DENSE_RANK and partition by customer id, and then ORDER BY the order_date AS rank to get a ranking on the order dates
+- JOIN and use WHERE on order date with a greater than or equal to the join_date to get only entries starting from the join_date
+- Use a rank = 1 and to get the top rank for each customer_id
+</details>
+
+***
