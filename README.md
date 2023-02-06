@@ -236,6 +236,10 @@ ORDER BY customer_id
 - Use DENSE_RANK and partition by customer id, and then ORDER BY the order_date AS rank to get a ranking on the order dates
 - JOIN and use WHERE on order date with a greater than or equal to the join_date to get only entries starting from the join_date
 - Use a rank = 1 and to get the top rank for each customer_id
+	
+Answer: 
+<br>
+![q6 answer](https://user-images.githubusercontent.com/122754787/216884056-765e37b4-be00-4dee-9d60-0a57d9298db8.png)
 </details>
 
 ***
