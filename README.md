@@ -241,3 +241,31 @@ Answer:
 </details>
 
 ***
+
+### Q7: Which item was purchased just before the customer became a member?
+<details>
+
+````sql
+with t1 as (
+	SELECT s.customer_id, m.join_date, s.order_date, s.product_id,
+	ROW_Number() OVER(PARTITION BY s.customer_id
+					 ORDER BY s.order_date DESC) AS rank
+	FROM sales s
+	JOIN members m ON s.customer_id = m.customer_id
+	WHERE s.order_date < m.join_date
+)
+
+SELECT s.customer_id, s.order_date, m.product_name FROM t1 s
+JOIN menu m ON s.product_id = m.product_id
+WHERE rank = 1
+ORDER BY customer_id
+````
+- Very similar to Question 6, make sure to DESC the ORDER BY  on s.order_date so that it gives the most recent orders right before the join_date
+- Flip the greater than equal sign to a less than sign on WHERE s.order_date < m.join_date so that you can fetch all the orders before the join_date
+
+Answer:
+<br>
+![q7answer](https://user-images.githubusercontent.com/122754787/216886145-e1edb434-adc6-4eae-a564-be2e74d34c95.png)
+</details>
+
+***
