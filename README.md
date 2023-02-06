@@ -225,10 +225,8 @@ with t1 as (
 	WHERE s.order_date >= m.join_date
 )
 
-SELECT s.customer_id, s.order_date, m.product_name
-FROM t1 s
-JOIN menu m
-ON s.product_id = m.product_id
+SELECT s.customer_id, s.order_date, m.product_name FROM t1 s
+JOIN menu m ON s.product_id = m.product_id
 WHERE rank = 1
 ORDER BY customer_id
 ````
