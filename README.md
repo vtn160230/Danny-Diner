@@ -209,3 +209,25 @@ Answer:
 <br>
 ![q5answer](https://user-images.githubusercontent.com/122754787/216849655-b547c715-ca65-4186-b32b-9e4b7e4bbea1.png)
 </details>
+
+***
+
+### Q6: Which item was purchased first by the customer after they became a member?
+
+````sql
+with t1 as (
+	SELECT s.customer_id, m.join_date, s.order_date, s.product_id,
+	DENSE_RANK() OVER(PARTITION BY s.customer_id
+					 ORDER BY s.order_date) AS rank
+	FROM sales s
+	JOIN members m ON s.customer_id = m.customer_id
+	WHERE s.order_date >= m.join_date
+)
+
+SELECT s.customer_id, s.order_date, m.product_name
+FROM t1 s
+JOIN menu m
+ON s.product_id = m.product_id
+WHERE rank = 1;
+````
+- Use a temp table t1, 
