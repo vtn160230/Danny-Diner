@@ -269,3 +269,26 @@ Answer:
 </details>
 
 ***
+
+### Q8: What is the total items and amount spent for each member before they became a member?
+
+````sql
+SELECT s.customer_id, COUNT(s.product_id) AS menu_item,
+SUM(mm.price) as total_sales FROM sales s
+JOIN members m ON s.customer_id = m.customer_id
+JOIN menu mm ON s.product_id = mm.product_id
+WHERE s.order_date < m.join_date
+GROUP BY s.customer_id
+ORDER BY s.customer_id
+````
+
+- 
+-
+-
+
+Answer:
+<br>
+![Q8](https://user-images.githubusercontent.com/122754787/216927917-de59dbe2-0514-415b-9d1f-028bc26bd62a.png)
+
+***
+
