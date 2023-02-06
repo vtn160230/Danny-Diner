@@ -289,7 +289,7 @@ ORDER BY s.customer_id
 Answer:
 <br>
 ![Q8](https://user-images.githubusercontent.com/122754787/216927917-de59dbe2-0514-415b-9d1f-028bc26bd62a.png)
-</detials>
+</details>
 
 ***
 
