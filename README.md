@@ -271,6 +271,7 @@ Answer:
 ***
 
 ### Q8: What is the total items and amount spent for each member before they became a member?
+<details>
 
 ````sql
 SELECT s.customer_id, COUNT(s.product_id) AS menu_item,
@@ -282,9 +283,8 @@ GROUP BY s.customer_id
 ORDER BY s.customer_id
 ````
 
-- 
--
--
+- Use a COUNT DISTINCT on product_id and SUM the total_sales before becoming a member
+- Use a filter on order_date less than the join date to get all the entries before each customer became a member
 
 Answer:
 <br>
