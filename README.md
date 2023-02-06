@@ -214,6 +214,7 @@ Answer:
 
 ### Q6: Which item was purchased first by the customer after they became a member?
 <details>
+	
 ````sql
 with t1 as (
 	SELECT s.customer_id, m.join_date, s.order_date, s.product_id,
